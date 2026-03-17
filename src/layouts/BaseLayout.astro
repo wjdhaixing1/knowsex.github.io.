@@ -37,6 +37,7 @@ const hrefLangTW = hrefLangCN.replace(Astro.site!.host.toString(), Astro.site!.h
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://mirror.hoilai.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	{
@@ -86,12 +87,10 @@ const hrefLangTW = hrefLangCN.replace(Astro.site!.host.toString(), Astro.site!.h
 	<HashLoader file="./src/styles/style.scss">
 		{(hash: string) => <link rel="stylesheet" href={`/style/style.min.css?${hash}`} />}
 	</HashLoader>
-	{/* <script async src="https://analytics.knowsex.net/script.js" data-website-id="74452ede-6372-4bf7-9f03-b9ecbe2f7978"></script> */}
 	<link rel="canonical" href={canonicalURL}/>
 	<link rel="alternate" hreflang="zh-CN" href={hrefLangCN}/>
 	<link rel="alternate" hreflang="zh-TW" href={hrefLangTW}/>
 	<link rel="sitemap" href="/sitemap-index.xml" />
-	<script defer src="https://analytics.knowsex.net/script.js" data-website-id="2c38c6f2-03ed-401e-a390-2a6a1aee595c"></script>
 </head>
 <body>
 	{
